@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>js11.html</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    function member(name,gender) {
+        this.name = name;
+        this.gender = gender;
+        this.display = display;
+    }
+
+    function display() {
+        str = this.name + " : " + this.gender
+        document.writeln(str + "</br>")
+    }
+
+    let m1 = new member("zhangshan","m");
+    let m2 = new member("lisi","m");
+    let m3 = new member("wangwu","f");
+
+    m1.display();
+    m2.display();
+    m3.display();
+
+</script>
+
+</body>
+</html>

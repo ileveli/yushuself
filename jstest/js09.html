@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>js09.html</title>
+    <script type="text/javascript">
+        function isEmail() {
+            let emailValue = document.getElementsByName("email")[0].value;
+
+            if(emailValue.indexOf("@") === -1){
+                alert("请填写正确的Email地址");
+            }
+            else{
+                alert("OK")
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <form>
+        email:<input type="text" name="email"> <input type="button" value="check" onclick="isEmail()">
+    </form>
+
+</body>
+</html>

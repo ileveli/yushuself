@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>js05.html</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    //let fruit = new Array("苹果","鸭梨","橙子");
+
+    //let fruit = ["苹果","鸭梨","橙子"];//recommend using
+
+    let fruit = Array();
+    fruit.push("苹果");
+    fruit.push("鸭梨");
+    fruit.push("橙子");
+    fruit.push("香蕉");
+    fruit.push("西瓜");
+
+    for(let i = 0; i < fruit.length; i++){
+        document.writeln("fruit[" + i + "] = " + fruit[i] + "</br>")
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>js06.html</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    let fruit = ["苹果","鸭梨","橘子"];
+
+    with(document){
+        writeln("<ul>");
+        writeln("<li>" + fruit.join()+ "</li>")
+        writeln("<li>" + fruit.join("、")+ "</li>")
+        writeln("<li>" + fruit.toString() + "</li>")
+        writeln("<li>" + fruit.reverse().join() + "</li>")
+        writeln("<li>" + fruit.valueOf() + "</li>")
+        writeln("</ul>");
+    }
+
+</script>
+
+</body>
+</html>

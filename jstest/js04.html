@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>js04.html</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+   let date = new Date();
+   let day = date.getDay();
+
+   if(0 == day){
+       day = "日 "
+   }
+
+   document.writeln("现在时刻：" + (date.getFullYear()) + "年 " + (date.getMonth() + 1 ) + "月 "
+                    + date.getDate() + "日 " +  day +  " " + date.getHours() + ":" + date.getMinutes()
+                    + ":" + date.getSeconds() + "." + date.getMilliseconds());
+</script>
+
+</body>
+</html>
