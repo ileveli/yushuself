@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>js06.html</title>
+
+    <script type="text/javascript">
+        function get() {
+            alert(this.username + ", " + this.password);
+        }
+
+        function createObject(username,password) {
+            object = new Object();
+
+            object.username = username;
+            object.password = password;
+
+            object.get = get;
+
+            return object;
+        }
+
+        let object1 = createObject("Zhansan",123);
+        let object2 = createObject("LiSi",456);
+
+        object1.get();
+        object2.get();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

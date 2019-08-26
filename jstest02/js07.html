@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>js07.html</title>
+    <script type="text/javascript">
+        function  Person() {
+            //在执行第一行代码前，js引擎会为我们生成一个对象；
+            this.username = "Zhangsan";
+            this.password = 123;
+
+            this.getInfo = function () {
+                alert(this.username + ", " + this.password);
+            }
+            //此处有个隐藏的return语句，用于将之前生成的队形返回
+        }
+        let person1 = new Person();
+        person1.getInfo();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

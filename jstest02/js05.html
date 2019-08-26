@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>js05.html</title>
+    <script type="text/javascript">
+        //带构造参数的的工厂方法
+        function createObject(username,password) {
+            let object = new Object();
+
+            object.username = username;
+            object.password = password;
+
+            object.get = function () {
+                alert(this.username + ", " + this.password)
+            }
+            return object;
+        }
+
+        let object1 = new createObject("ZhangSan",123);
+
+        object1.get();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

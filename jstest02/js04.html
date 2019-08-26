@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>js04.html</title>
+    <script type="text/javascript">
+        //工厂方法
+        function createObject() {
+            let object = new Object();
+
+            object.username = "LiSi";
+            object.password = "123";
+            
+            object.get = function () {
+                alert(this.username + ", " + this.password)
+            }
+            return object;
+        }
+
+        let object1 = new createObject();
+        let object2 = new createObject();
+
+        object1.get();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

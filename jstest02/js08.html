@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>js08.html</title>
+    <script type="text/javascript">
+        function Person(username,password) {
+
+            this.username = username;
+            this.password = password;
+
+            this.getInfo = function () {
+                alert(this.username + ", " + this.password);
+            }
+        }
+        let person1 = new Person("ZhangSan",123456);
+        person1.getInfo();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>js03.html</title>
+
+    <script type="text/javascript">
+       /*基于已有的对象扩充属性和方案*/
+       let object = new Object();
+
+       object.name = "ZhangSan";
+       object.sayName =  function (name) {
+           this.name = name;
+           alert(this.name)
+       }
+
+       object.sayName("LiSi");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
