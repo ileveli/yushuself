@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>js09.html</title>
+    <script type="text/javascript">
+        
+        function Person(){
+        }
+        
+        Person.prototype.username = "Zhansan";
+        Person.prototype.password = 123456;
+        
+        Person.prototype.getInfo = function () {
+            alert(this.username + ", " + this.password);
+        }
+
+        let person1 = new Person();
+        let person2 = new Person();
+
+        person1.username = "LiSi";
+
+        person1.getInfo();
+        person2.getInfo();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
