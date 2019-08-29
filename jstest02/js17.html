@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>js17.html</title>
+    <script type="text/javascript">
+        //使用混合方式实现对象继承
+        function Parent(username) {
+            this.username = username;
+        }
+        Parent.prototype.sayHello = function () {
+            alert(this.username);
+        }
+
+        function Child(username,password) {
+            Parent.call(this,username);
+            this.password = password;
+        }
+
+        Child.prototype = new Parent();
+        Child.prototype.sayWorld = function () {
+            alert(this.password);
+        }
+
+        let child = new Child("Zhangsan","456");
+
+        child.sayHello();
+        child.sayWorld();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>js16.hmml</title>
+    <script type="text/javascript">
+
+        //使用原型链(prototype chain)方式实现对象继承
+        function Parent() {
+        }
+
+        Parent.prototype.hello = "Hello"
+        Parent.prototype.sayHello = function () {
+            alert(this.hello);
+        }
+
+        function Child() {
+        }
+
+        Child.prototype = new Parent();
+        Child.prototype.world = "World";
+        Child.prototype.sayWorld = function () {
+            alert(this.world);
+        }
+
+        let child = new Child();
+
+        child.sayHello();
+        child.sayWorld();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
